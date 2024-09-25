@@ -16,7 +16,7 @@ class MyDocument extends Document {
       <Html lang={lang}>
         <Head>
           {/* You can add additional head elements here */}
-          <meta name="google-site-verification" content="ikClytgU_EOmadP85IyHWHzVI5JDsCEE2MX2zqXYVPs" />
+          {/* <meta name="google-site-verification" content="ikClytgU_EOmadP85IyHWHzVI5JDsCEE2MX2zqXYVPs" /> */}
         </Head>
         <body>
           <Main />
