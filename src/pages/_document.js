@@ -1,4 +1,6 @@
+// pages/_document.js
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import { useRouter } from 'next/router';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -7,10 +9,13 @@ class MyDocument extends Document {
   }
 
   render() {
+    // Access the language (lang) and country parameters from the query.
+    const { lang = 'en' } = this.props.__NEXT_DATA__.query || {}; // default to 'en' if not present
+
     return (
-      <Html lang="en">
+      <Html lang={lang}>
         <Head>
-          <meta charSet="UTF-8" />
+          {/* You can add additional head elements here */}
         </Head>
         <body>
           <Main />
