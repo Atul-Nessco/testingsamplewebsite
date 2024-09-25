@@ -17,7 +17,7 @@ export default function HomePage({ localeData, countryName }) {
         <title>{`${localeData?.title || 'Home'} (${countryName})`}</title>
         <meta name="description" content={localeData?.content || 'Default content'} />
         <link rel="alternate" hrefLang={hreflang} href={`/${country}/${lang}`} />
-        <meta name="google-site-verification" content="ikClytgU_EOmadP85IyHWHzVI5JDsCEE2MX2zqXYVPs" />
+        {/* <meta name="google-site-verification" content="ikClytgU_EOmadP85IyHWHzVI5JDsCEE2MX2zqXYVPs" /> */}
         {/* Default English India hreflang */}
       </Head>
       <main>
