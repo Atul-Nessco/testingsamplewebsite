@@ -10,9 +10,9 @@ export default function LocalizedPage({ localeData, countryName, hreflangs }) {
       <Head>
         <title>{`${localeData?.title || 'Page'} (${countryName})`}</title>
         <meta name="description" content={localeData?.content || 'Default content'} />
-        {hreflangs.map((hreflang) => (
+        {/* {hreflangs.map((hreflang) => (
           <link key={hreflang.lang} rel="alternate" hrefLang={hreflang.lang} href={hreflang.url} />
-        ))}
+        ))} */}
       </Head>
       <main>
         <h1>{localeData?.title || 'Localized Page'}</h1>
