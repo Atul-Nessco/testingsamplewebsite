@@ -10,7 +10,6 @@ export default function LocalizedPage({ localeData, countryName, hreflangs }) {
       <Head>
         <title>{`${localeData?.title || 'Page'} (${countryName})`}</title>
         <meta name="description" content={localeData?.content || 'Default content'} />
-        <meta name="google-site-verification" content="ikClytgU_EOmadP85IyHWHzVI5JDsCEE2MX2zqXYVPs" />
         {hreflangs.map((hreflang) => (
           <link key={hreflang.lang} rel="alternate" hrefLang={hreflang.lang} href={hreflang.url} />
         ))}
